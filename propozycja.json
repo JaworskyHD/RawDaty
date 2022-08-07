@@ -38,8 +38,102 @@
       "name": "Store Server Info"
     },
     {
+      "server": "0",
+      "varName": "",
+      "dataName": "propozycja",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "storepropozycja",
+      "name": "Store Server Data"
+    },
+    {
+      "storage": "1",
+      "varName": "storepropozycja",
+      "comparison": "1",
+      "value": "0",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "3",
+        "iffalseVal": "2"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "❌| Error!",
+          "url": "",
+          "color": "#ff0000",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "> **Nie ustawiłeś na jaki kanał mają być wysyłane propozcyję. Możesz to zrobić za pomocą komendy /Setup-propozycja!**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "✅| Udało się!",
+          "url": "",
+          "color": "#00ff44",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "> **Twoja propozycja została wysłana. Jeżeli chcesz zobaczyć swoją propozycję zobacz kanał <#${tempVars(\"storepropozycja\")}>.**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
       "channel": "103",
-      "varName": "TU WKLEJ ID",
+      "varName": "${tempVars(\"storepropozycja\")}",
       "message": "",
       "buttons": [],
       "selectMenus": [],
@@ -48,17 +142,17 @@
         {
           "title": "Nowa propozycja!",
           "url": "",
-          "color": "RED",
+          "color": "RANDOM",
           "timestamp": "true",
           "imageUrl": "",
-          "thumbUrl": "",
+          "thumbUrl": "${tempVars(\"s_icon\")}",
           "description": "> **${slashParams(\"Treść\")}**",
           "fields": [],
-          "author": "${tempVars(\"m_username\")}",
+          "author": "",
           "authorUrl": "",
-          "authorIcon": "${tempVars(\"m_avatar\")}",
-          "footerText": "${tempVars(\"s_name\")}",
-          "footerIconUrl": "${tempVars(\"s_icon\")}"
+          "authorIcon": "",
+          "footerText": "${tempVars(\"m_username\")}",
+          "footerIconUrl": "${tempVars(\"m_avatar\")}"
         }
       ],
       "reply": true,
