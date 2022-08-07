@@ -124,7 +124,7 @@
       "storage": "4",
       "varName": "Ilość",
       "comparison": "4",
-      "value": "200",
+      "value": "99",
       "branch": {
         "iftrue": "0",
         "iffalse": "3",
