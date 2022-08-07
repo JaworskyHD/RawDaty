@@ -1,0 +1,320 @@
+{
+  "name": "automod",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "vxYiT",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "automod",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "automodstore",
+      "name": "Store Server Data"
+    },
+    {
+      "storage": "1",
+      "varName": "automodstore",
+      "comparison": "1",
+      "value": "1",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "1"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "ADMINISTRATOR",
+      "branch": {
+        "iftrue": "1",
+        "iffalse": "0"
+      },
+      "name": "Check Member Permissions"
+    },
+    {
+      "message": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "m_text",
+      "name": "Store Message Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "m_tag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "m_id",
+      "name": "Store Member Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "ch_id",
+      "name": "Store Channel Info"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "5",
+      "value": "kurwa",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "13"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "5",
+      "value": "Kurwa",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "12"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "5",
+      "value": "Pedał",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "11"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "5",
+      "value": "Pedal",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "10"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "5",
+      "value": "pedal",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "9"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "5",
+      "value": "kurwo",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "8"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "5",
+      "value": "Nigger",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "7"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "5",
+      "value": "nigger",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "6"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "5",
+      "value": "niger",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "5"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "5",
+      "value": "cwel",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "4"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "5",
+      "value": "cfel",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "3"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "5",
+      "value": "Cwel",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "2"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "5",
+      "value": "dziwko",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "1"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "5",
+      "value": "Dziwka",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "1"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Wykryto zakazane wyrażenie!",
+          "url": "",
+          "color": "#ff0000",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "> **Wiadomość:** ${tempVars(\"m_text\")}\n> **Administracja została powiadomiona!**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "comment": "AKCJA #25 WKLEJ ID KANALU NA KTORY MAJA PRZYCHODZIC ALERTY",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "channel": "103",
+      "varName": "TU WKLEJ ID",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Automod - ALERT",
+          "url": "",
+          "color": "#ff0000",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "> **Użytkownik:** ${tempVars(\"m_id\")} | <@${tempVars(\"m_id\")}> | ${tempVars(\"m_tag\")}\n> **Kanał:** <#${tempVars(\"ch_id\")}>\n> **Wiadomość:** ${tempVars(\"m_text\")}",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "3"
+}
