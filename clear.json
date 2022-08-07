@@ -10,9 +10,9 @@
       "varName": "",
       "permission": "MANAGE_MESSAGES",
       "branch": {
-        "iftrue": "0",
-        "iffalse": "3",
-        "iffalseVal": "2"
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "2"
       },
       "name": "Check Member Permissions"
     },
