@@ -1,189 +1,65 @@
 {
-  "name": "antylink",
+  "name": "Propozycja",
   "permissions": "NONE",
   "permissions2": "NONE",
   "restriction": "1",
-  "_id": "jsJzE",
+  "_id": "uhZtY",
   "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "m_avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "m_username",
+      "name": "Store Member Info"
+    },
     {
       "server": "0",
       "varName": "",
-      "dataName": "antylink",
+      "info": "2",
+      "storage": "1",
+      "varName2": "s_name",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "5",
+      "storage": "1",
+      "varName2": "s_icon",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "propozycja",
       "defaultVal": "0",
       "storage": "1",
-      "varName2": "antylinkstore",
+      "varName2": "storepropozycja",
       "name": "Store Server Data"
     },
     {
       "storage": "1",
-      "varName": "antylinkstore",
+      "varName": "storepropozycja",
       "comparison": "1",
-      "value": "1",
+      "value": "0",
       "branch": {
         "iftrue": "0",
-        "iffalse": "1"
+        "iffalse": "3",
+        "iffalseVal": "2"
       },
       "name": "Check Variable"
-    },
-    {
-      "message": "0",
-      "varName": "",
-      "info": "2",
-      "storage": "1",
-      "varName2": "m_text",
-      "name": "Store Message Info"
-    },
-    {
-      "member": "1",
-      "varName": "",
-      "info": "21",
-      "storage": "1",
-      "varName2": "m_tag",
-      "name": "Store Member Info"
-    },
-    {
-      "member": "1",
-      "varName": "",
-      "info": "1",
-      "storage": "1",
-      "varName2": "m_id",
-      "name": "Store Member Info"
     },
     {
       "channel": "0",
-      "varName": "",
-      "info": "1",
-      "storage": "1",
-      "varName2": "ch_id",
-      "name": "Store Channel Info"
-    },
-    {
-      "storage": "1",
-      "varName": "m_text",
-      "comparison": "5",
-      "value": "discord.gg",
-      "branch": {
-        "iftrue": "3",
-        "iffalse": "0",
-        "iftrueVal": "9"
-      },
-      "name": "Check Variable"
-    },
-    {
-      "storage": "1",
-      "varName": "m_text",
-      "comparison": "5",
-      "value": "https://",
-      "branch": {
-        "iftrue": "3",
-        "iffalse": "0",
-        "iftrueVal": "8"
-      },
-      "name": "Check Variable"
-    },
-    {
-      "storage": "1",
-      "varName": "m_text",
-      "comparison": "5",
-      "value": "discord.g.g",
-      "branch": {
-        "iftrue": "3",
-        "iffalse": "0",
-        "iftrueVal": "7"
-      },
-      "name": "Check Variable"
-    },
-    {
-      "storage": "1",
-      "varName": "m_text",
-      "comparison": "5",
-      "value": "www.",
-      "branch": {
-        "iftrue": "3",
-        "iffalse": "0",
-        "iftrueVal": "6"
-      },
-      "name": "Check Variable"
-    },
-    {
-      "storage": "1",
-      "varName": "m_text",
-      "comparison": "5",
-      "value": "www",
-      "branch": {
-        "iftrue": "3",
-        "iffalse": "0",
-        "iftrueVal": "5"
-      },
-      "name": "Check Variable"
-    },
-    {
-      "storage": "1",
-      "varName": "m_text",
-      "comparison": "5",
-      "value": ".pl",
-      "branch": {
-        "iftrue": "3",
-        "iffalse": "0",
-        "iftrueVal": "4"
-      },
-      "name": "Check Variable"
-    },
-    {
-      "storage": "1",
-      "varName": "m_text",
-      "comparison": "5",
-      "value": ".de",
-      "branch": {
-        "iftrue": "3",
-        "iffalse": "0",
-        "iftrueVal": "3"
-      },
-      "name": "Check Variable"
-    },
-    {
-      "storage": "1",
-      "varName": "m_text",
-      "comparison": "5",
-      "value": ".xyz",
-      "branch": {
-        "iftrue": "3",
-        "iffalse": "0",
-        "iftrueVal": "2"
-      },
-      "name": "Check Variable"
-    },
-    {
-      "storage": "1",
-      "varName": "m_text",
-      "comparison": "5",
-      "value": ".net",
-      "branch": {
-        "iftrue": "3",
-        "iffalse": "0",
-        "iftrueVal": "1"
-      },
-      "name": "Check Variable"
-    },
-    {
-      "storage": "1",
-      "varName": "m_text",
-      "comparison": "5",
-      "value": ".com",
-      "branch": {
-        "iftrue": "0",
-        "iffalse": "1"
-      },
-      "name": "Check Variable"
-    },
-    {
-      "storage": "0",
-      "varName": "",
-      "reason": "",
-      "name": "Delete Message"
-    },
-    {
-      "channel": "1",
       "varName": "",
       "message": "",
       "buttons": [],
@@ -191,13 +67,13 @@
       "attachments": [],
       "embeds": [
         {
-          "title": "Wykryto link!",
+          "title": "❌| Error!",
           "url": "",
           "color": "#ff0000",
           "timestamp": "true",
           "imageUrl": "",
           "thumbUrl": "",
-          "description": "> **Link:** ${tempVars(\"m_text\")}\n> **Administracja została powiadomiona!**",
+          "description": "> **Nie ustawiłeś na jaki kanał mają być wysyłane propozcyję. Możesz to zrobić za pomocą komendy /Setup-propozycja!**",
           "fields": [],
           "author": "",
           "authorUrl": "",
@@ -218,32 +94,65 @@
       "name": "Send Message"
     },
     {
-      "comment": "AKCJA #25 WKLEJ ID KANALU NA KTORY MAJA PRZYCHODZIC ALERTY",
-      "color": "#ff0000",
-      "name": "Comment"
+      "name": "End Action Sequence"
     },
     {
-      "channel": "103",
-      "varName": "TU WKLEJ ID",
+      "channel": "0",
+      "varName": "",
       "message": "",
       "buttons": [],
       "selectMenus": [],
       "attachments": [],
       "embeds": [
         {
-          "title": "Antylink - ALERT",
+          "title": "✅| Udało się!",
           "url": "",
-          "color": "#ff0000",
+          "color": "#00ff44",
           "timestamp": "true",
           "imageUrl": "",
           "thumbUrl": "",
-          "description": "> **Użytkownik:** ${tempVars(\"m_id\")} | <@${tempVars(\"m_id\")}> | ${tempVars(\"m_tag\")}\n> **Kanał:** <#${tempVars(\"ch_id\")}>\n> **Link:** ${tempVars(\"m_text\")}",
+          "description": "> **Twoja propozycja została wysłana. Jeżeli chcesz zobaczyć swoją propozycję zobacz kanał <#${tempVars(\"storepropozycja\")}>.**",
           "fields": [],
           "author": "",
           "authorUrl": "",
           "authorIcon": "",
           "footerText": "",
           "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "channel": "103",
+      "varName": "${tempVars(\"storepropozycja\")}",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Nowa propozycja!",
+          "url": "",
+          "color": "RANDOM",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "${tempVars(\"s_icon\")}",
+          "description": "> **${slashParams(\"Treść\")}**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "${tempVars(\"m_username\")}",
+          "footerIconUrl": "${tempVars(\"m_avatar\")}"
         }
       ],
       "reply": true,
@@ -258,5 +167,15 @@
       "name": "Send Message"
     }
   ],
-  "comType": "3"
+  "comType": "4",
+  "description": "Wysyła propozycję",
+  "parameters": [
+    {
+      "name": "Treść",
+      "description": "Wpisz treść propozycji",
+      "type": "STRING",
+      "required": true,
+      "choices": null
+    }
+  ]
 }
