@@ -1,0 +1,169 @@
+{
+  "name": "GuessTheNumber",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "OjACk",
+  "actions": [
+    {
+      "message": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "m_text",
+      "name": "Store Message Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "ch_id",
+      "name": "Store Channel Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "gtn",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "gtnstore",
+      "name": "Store Server Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "gtnnagroda",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "gtnnagrodastore",
+      "name": "Store Server Data"
+    },
+    {
+      "storage": "1",
+      "varName": "ch_id",
+      "comparison": "1",
+      "value": "tempVars(\"gtnstore\")",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "1"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "liczbagtn",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "liczbastoregtn",
+      "name": "Store Server Data"
+    },
+    {
+      "storage": "1",
+      "varName": "m_text",
+      "comparison": "1",
+      "value": "tempVars(\"liczbastoregtn\")",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "1"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "m_username",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "m_id",
+      "name": "Store Member Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "<@${tempVars(\"m_id\")}>",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "👑| Gratulacje!",
+          "url": "",
+          "color": "#00ff44",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "> **Udało ci się odgadnąć tajemniczy numer: ``${tempVars(\"liczbastoregtn\")}``!**\n> **Twoja nagroda to: ${tempVars(\"gtnnagrodastore\")}**\n> **Aby odebrać nagrodę zgłoś się do:** <@816043677201334303>",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "gtn",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Server Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "gtnnagroda",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Server Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "liczbagtn",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Server Data"
+    }
+  ],
+  "comType": "3"
+}
