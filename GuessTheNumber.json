@@ -120,7 +120,7 @@
           "timestamp": "true",
           "imageUrl": "",
           "thumbUrl": "",
-          "description": "> **Udało ci się odgadnąć tajemniczy numer: ``${tempVars(\"liczbastoregtn\")}``!**\n> **Twoja nagroda to: ${tempVars(\"gtnnagrodastore\")}**\n> **Aby odebrać nagrodę zgłoś się do:** <@816043677201334303>",
+          "description": "> **Udało ci się odgadnąć tajemniczy numer: ``${tempVars(\"liczbastoregtn\")}``!**\n> **Twoja nagroda to: ${tempVars(\"gtnnagrodastore\")}**\n> **Aby odebrać nagrodę zgłoś się do:** <@ID>",
           "fields": [],
           "author": "",
           "authorUrl": "",
