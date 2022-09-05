@@ -1,0 +1,260 @@
+{
+  "name": "Embed",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "dRYFf",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "ADMINISTRATOR",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "2"
+      },
+      "name": "Check Member Permissions"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "❌| Error!",
+          "url": "",
+          "color": "#ff0000",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "> **Nie posiadasz uprawnień do wysyłania embedów!**\n> **Wymagane uprawnienie:** ``Administrator``",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "6",
+      "varName": "Kanał",
+      "info": "1",
+      "storage": "1",
+      "varName2": "ch_id",
+      "name": "Store Channel Info"
+    },
+    {
+      "storage": "4",
+      "varName": "Ikonka",
+      "comparison": "1",
+      "value": "null",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "3",
+        "iffalseVal": "3"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "✅| Sukces!",
+          "url": "",
+          "color": "#00ff44",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "> **Twój embed właśnie poleciał na kanał ${slashParams(\"Kanał\")}!**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "channel": "103",
+      "varName": "${tempVars(\"ch_id\")}",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "${slashParams(\"Tytuł\")}",
+          "url": "",
+          "color": "${slashParams(\"Kolor\")}",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "> **${slashParams(\"Opis\")}**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "✅| Sukces!",
+          "url": "",
+          "color": "#00ff44",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "> **Twój embed właśnie poleciał na kanał ${slashParams(\"Kanał\")}!**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "channel": "103",
+      "varName": "${tempVars(\"ch_id\")}",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "${slashParams(\"Tytuł\")}",
+          "url": "",
+          "color": "${slashParams(\"Kolor\")}",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "${slashParams(\"Ikonka\")}",
+          "description": "> **${slashParams(\"Opis\")}**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "4",
+  "description": "Tworzy embed",
+  "parameters": [
+    {
+      "name": "Kanał",
+      "description": "Podaj kanał na jaki ma być wysłany twój embed",
+      "type": "CHANNEL",
+      "required": true,
+      "choices": null
+    },
+    {
+      "name": "Tytuł",
+      "description": "Podaj tytuł embeda",
+      "type": "STRING",
+      "required": true,
+      "choices": null
+    },
+    {
+      "name": "Opis",
+      "description": "Podaj opis embeda",
+      "type": "STRING",
+      "required": true,
+      "choices": null
+    },
+    {
+      "name": "Kolor",
+      "description": "Podaj kolor embeda. Kod HEX możesz uzyskać tutaj https://htmlcolorcodes.com",
+      "type": "STRING",
+      "required": true,
+      "choices": null
+    },
+    {
+      "name": "Ikonka",
+      "description": "Wklej link ikonki",
+      "type": "STRING",
+      "required": false,
+      "choices": null
+    }
+  ]
+}
